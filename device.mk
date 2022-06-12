@@ -23,12 +23,15 @@
 #
 
 # Overlays
-#DEVICE_PACKAGE_OVERLAYS += \
-#    $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Wifi Overlay
 PRODUCT_PACKAGES += \
-    OnePlus9RWifiOverlay
+    OnePlus8ProWifiOverlay
 
 # Inherit from oneplus sm8250-common
 $(call inherit-product, device/oneplus/sm8250-common/common.mk)
+
+# Inherit from oneplus instantnoodlep
+$(call inherit-product, vendor/oneplus/instantnoodlep/instantnoodlep-vendor.mk)

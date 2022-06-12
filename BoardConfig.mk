@@ -17,7 +17,12 @@
 # Inherit from oneplus sm8250-common
 -include device/oneplus/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/lemonades
+DEVICE_PATH := device/oneplus/instantnoodlep
+
+# PowerShare
+SOONG_CONFIG_NAMESPACES += ONEPLUS_POWERSHARE
+SOONG_CONFIG_ONEPLUS_POWERSHARE := WIRELESS_TX_ENABLE_PATH
+SOONG_CONFIG_ONEPLUS_POWERSHARE_WIRELESS_TX_ENABLE_PATH := /proc/wireless/enable_tx
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -26,4 +31,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # inherit from the proprietary version
--include vendor/oneplus/lemonades/BoardConfigVendor.mk
+-include vendor/oneplus/instantnoodlep/BoardConfigVendor.mk
+
+# Recovery
+TARGET_RECOVERY_DENSITY := xxhdpi
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 121
