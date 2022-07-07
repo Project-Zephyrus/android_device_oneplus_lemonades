@@ -24,6 +24,9 @@ $(call inherit-product, device/oneplus/lemonades/device.mk)
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Offical
+CUSTOM_BUILD_TYPE := Official
+
 PRODUCT_NAME := lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
