@@ -25,7 +25,7 @@ $(call inherit-product, device/oneplus/lemonades/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Offical
-CUSTOM_BUILD_TYPE := Official
+# CUSTOM_BUILD_TYPE := Official
 
 PRODUCT_NAME := lemonades
 PRODUCT_DEVICE := lemonades
@@ -41,9 +41,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+#TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 USE_PIXEL_CHARGER_IMAGES := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 
-BUILD_FINGERPRINT := google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys
